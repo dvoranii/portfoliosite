@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width-device-width, initial-scale=1.0">
+            <title>Ildi Dvorani Portfolio Website</title>
+            <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize/min./css">
+            
+            <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+
+            <!-- update with own fonts-->
+            <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="css/style.css">
+
+        
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <div class="logo">
+                <a href="#home"><img src="img/logo2.jpg" alt=""></a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction-->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I'm <strong>Ildi Dvorani</strong>
+            </h1>
+            
+            <p class="section__subtitle section__subtitle--intro">FRONT-END DEV</p>
+        </section>
+
+        <!--My Services-->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+
+                <div class="service">
+                    <h3>Design & Development</h3>
+                    <p>My name is Ildi Dvorani and I am a web designer & developer based out of Mississauga, Ontario.
+                        I specialize in front-end development, paricularly Angular, CSS and Javascript. 
+                    </p>
+                </div>
+
+                <div class="service">
+                    <h3>Technical Skills</h3>
+                    <p>Angular, Javascript/Typescript, CSS, AJAX, JQuery, SQL & Photoshop.
+                       
+                    </p>
+                </div>
+
+                <div class="service">
+                    <h3>Entrepreneurship</h3>
+                    <p>Co-owner of OG Creations, a music production and recording studio 
+                        based out of Toronto, Ontario. Check out my <a href="https://www.ogcreations.ca/">studio website</a>
+                         for more information!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a href="#work" class="btn">My Work</a>
+        </section>
+
+        <!--About Me-->
+        <div class="about-me" id="about">
+
+        </div>
+
+        <!--My Work-->
+
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">Portfolio</h2>
+            <p class="section__subtitle section__subtitle--work">A section of my range of work</p>
+
+            <div class="portfolio">
+                <!--Portfolio Item 01-->
+                <a href="portfolio-item_1.html" class="portfolio__item">
+                    <img src="img/vgdb2.jpg" class="portfolio__img">
+                </a>
+
+                <!--Portfolio Item 02-->
+                <a href="portfolio-item_2.html" class="portfolio__item">
+                    <img src="img/openweather.jpg" class="portfolio__img">
+                </a>
+
+                <!--Portfolio Item 03-->
+                <a href="portfolio-item_3.html" class="portfolio__item">
+                    <img src="img/clonespic.jpg" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+        <section class="contact-form" id="contact">
+
+            <h3>Contact</h3>
+            <form action="https://formsubmit.co/ildidvorani@gmail.com" method="POST">      
+                <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+                <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                <input type="submit" value="SUBMIT"/>
+              </form>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer" id="socials">
+            <div class="tooltip">
+                <a class="footer-link" id="email"
+                onclick="copyToClipboard('ildidvorani@gmail.com')">ildidvorani@gmail.com</a>
+                <span class="tooltiptext">Copy</span>
+            </div>
+
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" 
+                    href="https://github.com/dvoranii"><i class="fab fa-github"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link"
+                    href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link"
+                    href="https://www.instagram.com/og.creations/"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
