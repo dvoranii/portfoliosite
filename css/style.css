@@ -623,3 +623,10 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:var(--clr-accent); }
+
+/*Thank you page*/
+
+.thankyou-content{
+    text-align: center;
+    padding-bottom: 470px;
+}
