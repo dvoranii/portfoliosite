@@ -1,0 +1,89 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Github Profile Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize/min./css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+
+    <!-- update with own fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<!--Header-->
+<header>
+    <div class="logo">
+        <a href="index.html#home"><img src="img/logo2.jpg" alt=""></a>
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+            <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+            <li class="nav__item"><a href="index.html#work" class="nav__link">My Work </a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Introduction-->
+<section class="intro">
+    <h1 class="section__title section__title--intro">
+        Github Finder
+    </h1>
+
+    <p class="section__subtitle section__subtitle--intro">Search Users</p>
+    <img src="img/GitHub-logo.png" alt="picture of me" class="intro__img">
+</section>
+<div class="portfolio__item-individual">
+    <div class="categories">
+        <button class="category active">Javascript</button>
+        <button class="category active">JQuery</button>
+        <button class="category">CSS</button>
+        <button class="category">HTML</button>
+    </div>
+    <p>This application uses the Github api and allows users to search Github profiles to view their information
+        and repositories. Once a profile is displayed, users may then view it on Github along with their repositories.
+    </p>
+    <p>
+        <a  href="https://dvoranii.github.io/gitfinder/">Demo</a> & <a href="https://github.com/dvoranii/gitfinder">Code</a>
+        <br><br>
+        <img src="img/githubfinderpic.jpg"></p>
+
+</div>
+
+<!--Footer-->
+
+<footer class="footer">
+    <div class="tooltip">
+        <a class="footer-link" id="email"
+        onclick="copyToClipboard('ildidvorani@gmail.com')">ildidvorani@gmail.com</a>
+        <span class="tooltiptext">Copy</span>
+    </div>
+    <ul class="social-list">
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/dvoranii"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.instagram.com/og.creations/"><i
+                    class="fab fa-instagram"></i></a>
+        </li>
+    </ul>
+</footer>
+
+<script src="js/index.js"></script>
+
+</html>
