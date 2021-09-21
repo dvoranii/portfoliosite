@@ -455,14 +455,14 @@ header{
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
 }
-.footer-link:hover,
+/* .footer-link:hover,
 .social-list__link:hover{
     opacity: .7;
 }
 
 .footer-link:hover{
     text-decoration: underline;
-}
+} */
 
 
 .social-list{
@@ -504,18 +504,81 @@ header{
 
 }
 
+/*Copy email*/
+.copy-text{
+    margin-left: 800px;
+    position: relative;
+    padding: 10px;
+    background: var(--clr-dark);
+    border: none;
+    display: flex;
+}
+
+.copy-text input.text{
+    padding: 10px;
+    font-size: 18px;
+    font-family: var(--ff-secondary);
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+
+}
+
+.copy-text button{
+    padding: 10px;
+    background: #5784f5;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.copy-text button:active{
+    background: #809ce2;
+
+}
+
+.copy-text button:before{
+    content: "Copied";
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    background: #5c81dc;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.copy-text button:after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    width: 10px;
+    height:10px;
+    background: #5c81dc;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.copy-text.active button:before,
+.copy-text.active button:after{
+    display: block;
+}
 
 /*TOOLTIP for email*/
 
-.tooltip {
+/* .tooltip {
     position: relative;
     display: inline-block;
-  }
-.tooltiptext{
+  } */
+/* .tooltiptext{
     font-size: 12pt;
     font-family: var(--ff-secondary);
-}
-  
+} */
+/*   
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
@@ -523,17 +586,17 @@ header{
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 5px 0; */
     
     /* Position the tooltip */
-    position: absolute;
+    /* position: absolute;
     z-index: 1;
     top: 150%;
     left: 50%;
     margin-left: -60px;
-  }
+  } */
 
-  .tooltip .tooltiptext::after{
+  /* .tooltip .tooltiptext::after{
       content: "";
       position: absolute;
       bottom: 100%;
@@ -546,7 +609,7 @@ header{
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
-  }
+  } */
 
 /*Categories*/
 

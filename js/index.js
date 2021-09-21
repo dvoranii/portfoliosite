@@ -11,14 +11,14 @@ navLinks.forEach(link =>{
     })
 });
 
-function copy() {
-    var copyText = document.querySelector("#input");
-    copyText.select();
+let copyText = document.querySelector(".copy-text");
+copyText.querySelector("button").addEventListener("click", function(){
+    let input = copyText.querySelector("input.text");
+    input.ariaSelected();
     document.execCommand("copy");
-  }
-  
-document.querySelector("#copy").addEventListener("click", copy);
-
-function copyToClipboard(value) {
-    navigator.clipboard.writeText(value);
-  }
+    copyText.classList.add("active");
+    window.getSelection().removeAllRanges();
+    setTimeout(function(){
+        copyText.classList.remove("active");
+    }, 2500);
+});
