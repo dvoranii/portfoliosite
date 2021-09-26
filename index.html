@@ -55,7 +55,7 @@
 
                 <div class="service">
                     <h3>Design & Development</h3>
-                    <p>Hi, my name is Ildi Dvorani and I am a web designer & developer based out of Mississauga, ON.
+                    <p>My name is Ildi Dvorani and I am a web designer & developer based out of Mississauga, Ontario.
                         I specialize in front-end development, paricularly Angular, CSS and Javascript. 
                     </p>
                 </div>
@@ -100,12 +100,6 @@
                     <img src="img/gitfinder.jpg" class="portfolio__img">
                 </a>
 
-                <!-- Portfolio Item 02
-                <a href="portfolio-item_2.html" class="portfolio__item">
-                    <img src="img/openweather.jpg" class="portfolio__img">
-                </a> -->
-
-                <!--Portfolio Item 03-->
                 <a href="portfolio-item_3.html" class="portfolio__item">
                     <img src="img/clonespic.jpg" class="portfolio__img">
                 </a>
@@ -127,24 +121,30 @@
 
         <!--Footer-->
         <footer class="footer" id="socials">
-            <div class="copy-text">
-                <a class="footer-link" id="email">dvoranii@ildidev.com</a>
+            <div class="footer-link">
+                <a id="email">dvoranii@ildidev.com</a>
             </div>
 
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" 
-                    href="https://github.com/dvoranii"><i class="fab fa-github"></i></a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link"
-                    href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link"
-                    href="https://www.instagram.com/og.creations/"><i class="fab fa-instagram"></i></a>
-                </li>
-            </ul>
+            <div class="wrapper">
+                <div class="icon linkedin">
+                    <div class="tooltip">Linkedin</div>
+                    <span> <a class="social-list__link"
+                        href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a></span>
+                </div>
+        
+                <div class="icon github">
+                    <div class="tooltip">Github</div>
+                    <span><a class="social-list__link" 
+                        href="https://github.com/dvoranii"><i class="fab fa-github"></i></a></span>
+                </div>
+        
+                <div class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span><a href="https://www.instagram.com/og.creations/"><i class="fab fa-instagram"></i></a></span>
+                </div>
+                
+            </div>
+
         </footer>
 
         <script src="js/index.js"></script>

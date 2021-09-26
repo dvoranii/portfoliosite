@@ -364,40 +364,6 @@ header{
     height: 50px;
 }
 
-/* .about-me__img{
-    box-shadow: var(--bs);
-}
-
-@media(min-width: 600px){
-    .about-me{
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-            grid-column-gap: 2em;         
-    }
-    .section__title--about{
-        grid-area: title;
-    }
-    .section__subtitle--about{
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -2em;
-        width: calc(100% + 4em);
-        padding-left: 2em;
-        padding-right: calc(200px + 4em);
-    }
-
-    .about-me__img{
-        grid-area: img; 
-        position: relative;
-    }
-} */
-
-/* My Work*/
 
 .my-work{
     background-color: var(--clr-dark);
@@ -439,12 +405,16 @@ header{
 
 .footer{
     background: var(--clr-dark);
-    color: var(--clr-accent);
+    
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
 }
 
+.footer #email{
+    color: var(--clr-accent);
+    cursor: pointer;
+}
 
 .footer a {
     color: inherit;
@@ -454,15 +424,114 @@ header{
 .footer-link{
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
-}
-/* .footer-link:hover,
-.social-list__link:hover{
-    opacity: .7;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 100px;
 }
 
-.footer-link:hover{
-    text-decoration: underline;
-} */
+/*Social Buttons*/
+
+.wrapper{
+    display: inline-flex;
+}
+
+.wrapper .icon{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition:all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon span{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.wrapper .icon span i{
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.wrapper .icon:hover span i{
+    color: #fff;
+}
+
+.wrapper .icon .tooltip{
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    font-size: 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    padding: 10px 18px;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition:all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.wrapper .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .icon .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition:all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip span,
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+
+}
+
+.wrapper .linkedin:hover span,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip:before{
+    background: #0A66C2;
+    color: #fff;
+    font: var(--ff-secondary);
+    font-size: 15px;
+}
+
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before{
+    background: #3d3d3d;
+    color: #fff;
+    font: var(--ff-secondary);
+    font-size: 15px;
+}
+
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip:before{
+    background: #e1306c;
+    color: #fff;
+    font: var(--ff-secondary);
+    font-size: 15px;
+}
 
 
 .social-list{
@@ -504,112 +573,6 @@ header{
 
 }
 
-/*Copy email*/
-.copy-text{
-    margin-left: 800px;
-    position: relative;
-    padding: 10px;
-    background: var(--clr-dark);
-    border: none;
-    display: flex;
-}
-
-.copy-text input.text{
-    padding: 10px;
-    font-size: 18px;
-    font-family: var(--ff-secondary);
-    color: black;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-
-}
-
-.copy-text button{
-    padding: 10px;
-    background: #5784f5;
-    color: #fff;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.copy-text button:active{
-    background: #809ce2;
-
-}
-
-.copy-text button:before{
-    content: "Copied";
-    position: absolute;
-    top: -50px;
-    right: 0px;
-    background: #5c81dc;
-    padding: 8px 10px;
-    border-radius: 20px;
-    font-size: 15px;
-}
-
-.copy-text button:after{
-    content: "";
-    position: absolute;
-    top: -20px;
-    right: 25px;
-    width: 10px;
-    height:10px;
-    background: #5c81dc;
-    transform: rotate(45deg);
-    display: none;
-}
-
-.copy-text.active button:before,
-.copy-text.active button:after{
-    display: block;
-}
-
-/*TOOLTIP for email*/
-
-/* .tooltip {
-    position: relative;
-    display: inline-block;
-  } */
-/* .tooltiptext{
-    font-size: 12pt;
-    font-family: var(--ff-secondary);
-} */
-/*   
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0; */
-    
-    /* Position the tooltip */
-    /* position: absolute;
-    z-index: 1;
-    top: 150%;
-    left: 50%;
-    margin-left: -60px;
-  } */
-
-  /* .tooltip .tooltiptext::after{
-      content: "";
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      margin-left: -5px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: transparent transparent black transparent;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  } */
 
 /*Categories*/
 
