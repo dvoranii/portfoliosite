@@ -687,7 +687,7 @@ textarea {
 .copy-text button{
     padding: 10px;
     border-radius: 10px;
-    background: #5784f5;
+    background: var(--clr-accent);
     color: #fff;
     font-size: 18px;
     border: none;
@@ -699,24 +699,31 @@ textarea {
 
 }
 
+.copy-text i{
+    color: var(--clr-dark);
+}
+
 
 .copy-text button:active{
-    background: #809ce2;
+    background: #b1ccd3;
 
 }
 
 .copy-text button:after {
-    content: "Copied";
+    content: "Copied!";
+    color: black;
+    font-weight: bold;
     position: relative;
     top: -70px;
     right: 15px;
-    background: #809ce2;
+    background: var(--clr-accent);
     padding: 5px;
     border-radius: 20px;
     font-family: var(--ff-secondary);
     font-size: 13px;
     display: none;
     width: 60px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
 
 }
 
