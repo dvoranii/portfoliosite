@@ -466,7 +466,7 @@ header{
 .contact-form{
     text-align: center;
     background-image:linear-gradient(black, #111);
-    border-bottom: 2px solid whitesmoke;
+   
     padding-top: 40px;
 }
 
@@ -527,7 +527,7 @@ textarea {
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
-    margin-top: -50px;
+   
 }
 
 .footer #email{
