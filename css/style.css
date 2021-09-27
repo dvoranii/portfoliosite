@@ -59,6 +59,7 @@ img{
     display: block;
     max-width: 100%;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
 }
 
 strong{font-weight: var(--fw-bold)}
@@ -386,12 +387,12 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-
 }
 
 .portfolio__item{
     background: var(--clr-accent);
     overflow:inherit;
+    
 }
 
 .portfolio__img{
@@ -417,7 +418,13 @@ header{
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 50px;
+    margin-bottom: 50px;
 
+}
+
+.portfolio__item-individual .categories img{
+    margin-bottom: 50px;
 }
 
 .portfolio__item-individual p{
