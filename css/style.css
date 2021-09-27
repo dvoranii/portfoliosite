@@ -119,6 +119,12 @@ h3{
     display: block;
 }
 
+.section__title--work{
+    color: whitesmoke;
+    text-shadow: 1px 4px 4px rgb(32, 32, 32);
+
+}
+
 .section__subtitle{
     margin: 0;
     font-size: var(--fs-h3);
@@ -309,6 +315,7 @@ header{
     color: white;
     text-align: center;
     line-height: 25px;
+    margin-bottom: -30px;
 }
 .section__title--services{
     color: var(--clr-accent);
@@ -367,10 +374,12 @@ header{
 
 
 .my-work{
-    background-color: var(--clr-dark);
+    background-color: #2f2f2f;
     color: var(--clr-light);
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
+    text-shadow: 1px 2px 2px rgb(46, 46, 46);
+
 }
 
 .portfolio {
@@ -449,13 +458,15 @@ header{
 /*Contact*/
 .contact-form{
     text-align: center;
-    background: #111;
+    background-image:linear-gradient(black, #111);
+    border-bottom: 2px solid whitesmoke;
+    padding-top: 40px;
 }
 
 .contact-form h3{
     color: var(--clr-accent);
     padding-bottom: 20px;
-    font-size: 22pt;
+    font-size: 25pt;
 }
 form { max-width:420px; margin:auto; }
 
@@ -505,10 +516,11 @@ textarea {
 /* Footer */
 
 .footer{
-    background: var(--clr-dark);
+    background-image: linear-gradient(#2F2F2F, #181818);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
+    margin-top: -50px;
 }
 
 .footer #email{
@@ -657,11 +669,13 @@ textarea {
     padding-bottom: 85px;
     position: relative;
     align-content: center;
+    margin-top: -30px;
 }
 .label
 {
     padding: 10px;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
     color: var(--clr-accent);
     font-family: var(--ff-secondary);
 }
@@ -669,7 +683,7 @@ textarea {
 .copy-text{
     position: relative;
     padding: 10px;
-    background: var(--clr-dark);
+    background: transparent;
     border-radius:10px;
     
 }
@@ -723,7 +737,7 @@ textarea {
     font-size: 13px;
     display: none;
     width: 60px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 
 }
 
