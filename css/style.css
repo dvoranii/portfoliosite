@@ -156,11 +156,12 @@ header{
 }
 
 .logo{
-    max-width: 250px;
+    max-width: 200px;
     border-radius: 900px;
+
 }
 
-.logo_img{
+.logo .logo_img{
     border-radius: 10px;
 
 }
@@ -421,12 +422,7 @@ header{
     max-width: 1000px;
     margin: 0 auto;
     padding: 50px;
-    margin-bottom: 50px;
 
-}
-
-.portfolio__item-individual .categories img{
-    margin-bottom: 50px;
 }
 
 .portfolio__item-individual p{
