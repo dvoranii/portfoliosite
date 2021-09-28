@@ -83,6 +83,7 @@ strong{font-weight: var(--fw-bold)}
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    border: solid 2px var(--clr-dark);
 }
 
 .btn:hover{
@@ -309,18 +310,19 @@ header{
 /*my services section*/
 
 .my-services{
-    background:var(--clr-dark);
-    background-image:url(../img/background.jpg);
+    background:linear-gradient(var(--clr-dark),white);
+    background-image: url('/img/greyshapesbckgrnd.jpg');
     background-size: cover;
     background-blend-mode: multiply ;
-    color: white;
+    color: black;
     text-align: center;
     line-height: 25px;
     margin-bottom: -30px;
 }
 .section__title--services{
-    color: var(--clr-accent);
     position: relative;
+    color:black;
+
 }
 
 .section__title--services::after{
@@ -344,11 +346,11 @@ header{
 }
 
 .service a{
-    color: white;
+    color: blue;
 }
 
 .service a:hover{
-    color: blue;
+    color: purple;
 }
 
 @media (min-width: 800px){
@@ -465,13 +467,13 @@ header{
 /*Contact*/
 .contact-form{
     text-align: center;
-    background-image:linear-gradient(black, #111);
+    background-image:url('/img/greyshapesbckgrnd.jpg');
    
     padding-top: 40px;
 }
 
 .contact-form h3{
-    color: var(--clr-accent);
+    color: black;
     padding-bottom: 20px;
     font-size: 25pt;
 }
@@ -486,7 +488,7 @@ form { max-width:420px; margin:auto; }
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid var(--clr-accent);
+  border:2px solid var(--clr-dark);
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
