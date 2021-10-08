@@ -57,7 +57,7 @@ section {
     padding: 5em 2em;
 }
 
-img{
+img {
     display: block;
     max-width: 100%;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -315,7 +315,7 @@ header{
         grid-template-areas: 
             "img title"
             "img subtitle";
-        grid-template-columns: min-conten max-content;
+        grid-template-columns: min-content max-content;
     }
 
     .intro__img{
@@ -337,10 +337,20 @@ header{
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
+
 }
 
 /*my services section*/
 
+.service-icon{
+    box-shadow: none;
+    padding-left: 190px;
+    padding-bottom: 30px;
+    height: 150px;
+
+
+
+}
 .my-services{
     background:linear-gradient(var(--clr-dark),white);
     background-image: url('/img/greyshapesbckgrnd.jpg');
@@ -360,15 +370,18 @@ header{
 .section__title--services::after{
     content: '';
     display: block;
-    width: 2em;
+    width: 3em;
     height: 1px;
+    color: black;
     margin:0.5em auto 1em;
     background: var(--clr-light);
     opacity: 0.25;
+    border-bottom: 1px solid black;
 }
 
 .services{
     margin-bottom: 4em;
+    
 }
 
 .service{
@@ -386,7 +399,7 @@ header{
     color: purple;
 }
 
-@media (min-width: 800px){
+@media (min-width: 1000px){
     .services{
         display: flex;
         max-width: 1000px;;
@@ -399,6 +412,9 @@ header{
     .service + .service{
         margin-left: 2em;
         text-align: center;
+        
+        
+
     }
 }
 
