@@ -344,13 +344,18 @@ header{
 
 .service-icon{
     box-shadow: none;
-    padding-left: 190px;
+    padding-left: 190px;  
     padding-bottom: 30px;
     height: 150px;
 
-
-
 }
+
+@media (min-width:400px){
+    .service-icon{
+        padding-left: 160px;
+    }
+} 
+
 .my-services{
     background:linear-gradient(var(--clr-dark),white);
     background-image: url('/img/greyshapesbckgrnd.jpg');
@@ -412,7 +417,7 @@ header{
 
     .service + .service{
         margin-left: 2em;
-        text-align: center;     
+        text-align: center;  
 
     }
 }
