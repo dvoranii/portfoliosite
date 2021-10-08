@@ -22,3 +22,7 @@ copyText.querySelector("button").addEventListener("click", function(){
         copyText.classList.remove("active");
     }, 2500)
 });
+
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});

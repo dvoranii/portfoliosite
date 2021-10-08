@@ -25,6 +25,8 @@
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25 ),
     0.125em 0.125em 0.25em rgba(0,0,0,0.15);
 
+    --load-position-pi: 50%;
+
 }
 
 
@@ -111,10 +113,40 @@ h3{
 
 .section__title{
     margin-bottom: 0.25em;
+    animation: title-load 400ms ease-in;
+
+}
+
+@keyframes title-load{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes text-load{
+    0%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes text-load-2{
+    0%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .section__title--intro{
     font-weight: var(--fw-reg);
+    animation: title-load 400ms ease-in;
 }
 
 .section__title--intro strong{
@@ -139,6 +171,7 @@ h3{
     padding: .5em;   
     font-family: var(--ff-sec);
     margin-bottom: 1em;
+    animation: title-load 300ms;
 }
 
 .section__subtitle--work{
@@ -158,6 +191,7 @@ header{
 .logo{
     max-width: 150px;
     border-radius: 900px;
+    animation: title-load 300ms;
 
 }
 
@@ -268,10 +302,6 @@ header{
 }
 
 
-.intro__img{
-    box-shadow: var(--bs);
-}
-
 .section__subtitle--intro{
     display: inline-block;
 }
@@ -293,6 +323,7 @@ header{
         min-width: 250px;
         position: relative;
         z-index: 2;
+        animation: title-load 400ms ease-in;
 
 
     }
@@ -344,6 +375,7 @@ header{
     max-width: 500px;
     margin: 0 auto;
     margin-left: auto;
+    animation: text-load 250ms ease-in;
 }
 
 .service a{
@@ -402,6 +434,7 @@ header{
     transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
+    
 }
 
 .portfolio__item:focus{
@@ -422,6 +455,7 @@ header{
     max-width: 1000px;
     margin: 0 auto;
     padding: 50px;
+    animation: text-load-2 400ms ease-in;
 
 }
 
