@@ -1,3 +1,7 @@
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});
+
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
 
@@ -23,6 +27,3 @@ copyText.querySelector("button").addEventListener("click", function(){
     }, 2500)
 });
 
-$(document).ready(function(){
-    $(window).scrollTop(0);
-});
