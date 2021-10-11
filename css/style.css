@@ -423,7 +423,7 @@ header{
         box-shadow: none;
         padding-left: 190px;  
         padding-bottom: 30px;
-        height: 150px; 
+        height: 180px; 
         display: flex;
         max-width: 1000px;;
         margin-left: auto;
@@ -434,16 +434,15 @@ header{
 
 }
 
-@media (max-width: 1000px){
+@media (min-width: 250px){
     .service-icon{
         box-shadow: none;
         padding-left: 190px;  
         padding-bottom: 30px;
-        height: 150px; 
+        height: 180px; 
         display: flex;
         max-width: 1000px;;
-        margin-left: 0px;
-        margin-right: auto;    
+        margin-left: -30px;  
         align-items: center;
     
         }
