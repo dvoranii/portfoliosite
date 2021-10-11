@@ -7,8 +7,8 @@
 /*Custom Properties*/
 
 :root{
-    --ff-primary: 'Lora', serif;
-    --ff-secondary: 'Roboto Slab', serif;
+    --ff-primary: 'Bebas Regular', sans-serif;
+    --ff-secondary: 'Roboto Slab', sans-serif;
     --fw-reg: 300;
     --fw-bold:900;
 
@@ -43,14 +43,16 @@
 
 html{
     scroll-behavior: smooth;
+    
 }
 body{
     background: var(--clr-light);
     color: var(--clr-dark);
     margin: 0;
-    font-family: var(--ff-primary);
+    font-family: 'Sawarabi Gothic', sans-serif;
     font-size: var(--fs-body);
     line-height: 1;
+    
 }
 
 section {
@@ -342,19 +344,14 @@ header{
 
 /*my services section*/
 
-.service-icon{
-    box-shadow: none;
-    padding-left: 190px;  
-    padding-bottom: 30px;
-    height: 150px;
+.servicesTitle{
 
 }
-
-@media (min-width:400px){
+/* @media (min-width:200px){
     .service-icon{
         padding-left: 160px;
     }
-} 
+}  */
 
 .my-services{
     background:linear-gradient(var(--clr-dark),white);
@@ -422,7 +419,37 @@ header{
         text-align: center;  
 
     }
+    .service-icon{
+        box-shadow: none;
+        padding-left: 190px;  
+        padding-bottom: 30px;
+        height: 150px; 
+        display: flex;
+        max-width: 1000px;;
+        margin-left: auto;
+        margin-right: 190px;    
+        align-items: center;
+    
+        }
+
 }
+
+@media (max-width: 1000px){
+    .service-icon{
+        box-shadow: none;
+        padding-left: 190px;  
+        padding-bottom: 30px;
+        height: 150px; 
+        display: flex;
+        max-width: 1000px;;
+        margin-left: 0px;
+        margin-right: auto;    
+        align-items: center;
+    
+        }
+}
+
+
 
 /* About section*/
 
